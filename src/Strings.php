@@ -7,7 +7,7 @@ class Strings
     /**
      * Checks that the provided $haystack starts with provided $needle
      */
-    public static function startsWith($needle, $haystack): bool
+    public static function startsWith(string $needle, string $haystack): bool
     {
         if (empty($needle)) {
             throw new \InvalidArgumentException('No needle provided');
