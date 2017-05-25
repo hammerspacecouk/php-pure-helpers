@@ -1,3 +1,5 @@
+![Build status](https://travis-ci.org/hammerspacecouk/php-pure-helpers.svg?branch=master)
+
 # PHP Pure Helpers
 
 Sometimes there are functions you wish existed in the default PHP library. Simple pure functions that accept inputs and return an output.
@@ -27,3 +29,6 @@ Compare::allSame($a, $b, $c); // false
 
 ### Code sniff
 `composer cs`
+
+### Build
+The code will build on [Travis](https://travis-ci.org/hammerspacecouk/php-pure-helpers) when a PR is raised or a commit to master is done
