@@ -2,7 +2,7 @@
 
 namespace Hammerspace\PureHelpers;
 
-class Compare
+class Comparisons
 {
     /**
      * Checks that all the arguments provided of the same type and value

@@ -11,7 +11,7 @@ The production version of this library has no dependencies. It uses PHP 7.1 to b
 Example:
 
 ```php
-use Hammerspace\PureHelpers\Compare;
+use Hammerspace\PureHelpers\Comparisons;
 
 $a = 1;
 $b = 1;

@@ -2,10 +2,10 @@
 
 namespace Tests\Hammerspace\PureHelpers;
 
-use Hammerspace\PureHelpers\Compare;
+use Hammerspace\PureHelpers\Comparisons;
 use PHPUnit\Framework\TestCase;
 
-class CompareTest extends TestCase
+class ComparisonsTest extends TestCase
 {
     public function testAllSame()
     {
@@ -13,23 +13,23 @@ class CompareTest extends TestCase
         $b = 1;
         $c = 1;
 
-        $this->assertTrue(Compare::allSame($a, $b, $c));
+        $this->assertTrue(Comparisons::allSame($a, $b, $c));
 
         // different number
         $a = 2;
-        $this->assertFalse(Compare::allSame($a, $b, $c));
+        $this->assertFalse(Comparisons::allSame($a, $b, $c));
 
         // different type
         $a = '1';
-        $this->assertFalse(Compare::allSame($a, $b, $c));
+        $this->assertFalse(Comparisons::allSame($a, $b, $c));
 
         // type coercion would make these the same
-        $this->assertFalse(Compare::allSame(0, null, ''));
+        $this->assertFalse(Comparisons::allSame(0, null, ''));
     }
 
     public function testAllSameWithNoInputsThrowsException()
     {
         $this->expectException(\InvalidArgumentException::class);
-        Compare::allSame();
+        Comparisons::allSame();
     }
 }
