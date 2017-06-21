@@ -1,4 +1,5 @@
-![Build status](https://travis-ci.org/hammerspacecouk/php-pure-helpers.svg?branch=master)
+[![Build Status](https://travis-ci.org/hammerspacecouk/php-pure-helpers.svg?branch=master)](https://travis-ci.org/hammerspacecouk/php-pure-helpers)
+
 
 # PHP Pure Helpers
 
