@@ -3,7 +3,11 @@
   "description": "A set of helper functions for common tasks in PHP",
   "type": "library",
   "autoload": {
-    "psr-4": { "Hammerspace\\PureHelpers\\": "src/" }
+    "files": [
+      "src/Booleans.php",
+      "src/Comparisons.php",
+      "src/Strings.php"
+    ]
   },
   "autoload-dev": {
     "psr-4": { "Tests\\Hammerspace\\PureHelpers\\": "tests/" }
