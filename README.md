@@ -12,17 +12,17 @@ The production version of this library has no dependencies. It uses PHP 7.1 to b
 Example:
 
 ```php
-use Hammerspace\PureHelpers\Comparisons;
+use function Hammerspace\PureHelpers\Comparisons\allSame;
 
 $a = 1;
 $b = 1;
 $c = 1;
 
 // Are they all the same (must be the same type too)
-Compare::allSame($a, $b, $c); // true
+allSame($a, $b, $c); // true
 
 $c = 2;
-Compare::allSame($a, $b, $c); // false
+allSame($a, $b, $c); // false
 ```
 
 ### Run tests
