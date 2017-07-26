@@ -32,6 +32,9 @@ function startsWith(string $needle, string $haystack): bool
     return (0 === strpos($haystack, $needle));
 }
 
+/**
+ * Truncate a string back to the nearest space
+ */
 function safeTruncate(string $input, int $length, string $suffix = '…'): string
 {
     if ($length <= 0) {
